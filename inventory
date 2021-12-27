@@ -1,4 +1,6 @@
 [web]
-node1
+system1
+localhost
+
 [dev]
-node2
+system2
