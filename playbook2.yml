@@ -1,0 +1,14 @@
+---
+- hosts: all
+  become: true
+  tasks:
+    - name: group add
+      group: 
+        name: developer
+        state: present
+    - name: add users to group
+      user:
+        name: bob
+        group: developer
+        append: yes
+        state: present
